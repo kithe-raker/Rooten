@@ -5,6 +5,8 @@ using UnityEngine;
 public class test_sceneTrigger : MonoBehaviour
 {
     public GameObject sceneLoader;
+    public int TargetSceneIndex;
+
 
     // Update is called once per frame
     void Update()
@@ -14,7 +16,7 @@ public class test_sceneTrigger : MonoBehaviour
            SceneLoader obj =  sceneLoader.GetComponent<SceneLoader>();
            if(obj != null)
             {
-                StartCoroutine(obj.LoadTargetScene());
+                StartCoroutine(obj.LoadTargetScene(TargetSceneIndex));
             }
 
         }

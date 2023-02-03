@@ -252,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 8388429754711488188}
+  TargetSceneIndex: 2
 --- !u!1 &1621803354
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,10 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public Animator CrossFade;
-    public int TargetSceneIndex;
 
-
-    public IEnumerator LoadTargetScene()
+    public IEnumerator LoadTargetScene(int TargetSceneIndex)
     {
         CrossFade.SetTrigger("StartFade");
         yield return new WaitForSeconds(1f);

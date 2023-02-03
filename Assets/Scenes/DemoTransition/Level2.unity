@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 1935141528}
+  TargetSceneIndex: 1
 --- !u!4 &31935619
 Transform:
   m_ObjectHideFlags: 0
