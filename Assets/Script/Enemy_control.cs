@@ -18,7 +18,7 @@ public class Enemy_control : MonoBehaviour
     private Vector2 movement;
     public Vector2 dir;
 
-    public GameObject bulletpod;
+    //public GameObject bulletpod;
    
 
 
@@ -30,7 +30,7 @@ public class Enemy_control : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
-        bulletpod.SetActive(false);
+        //bulletpod.SetActive(false);
         anim.SetBool("IsRunning", false);
 
 
@@ -75,7 +75,7 @@ public class Enemy_control : MonoBehaviour
             
             MoveCharacter(movement);
             anim.SetBool("IsRunning",true);
-            bulletpod.SetActive(false);
+            //bulletpod.SetActive(false);
 
 
         }
@@ -98,7 +98,7 @@ public class Enemy_control : MonoBehaviour
     {
          rb.velocity = Vector2.zero;
          yield return new WaitForSeconds(1f);
-         bulletpod.SetActive(true);
+         //bulletpod.SetActive(true);
     }
     
 
