@@ -12,7 +12,7 @@ public class MC_control : MonoBehaviour
     public Vector2 movement;
 
 
-    public LayerMask wallLayer;
+    
     public bool collision;
     public Transform Checker;
     public Collider2D MC_collider;
