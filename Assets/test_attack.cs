@@ -13,7 +13,7 @@ public class test_attack : MonoBehaviour
          health = target.GetComponent<HealthComponent>();
         if(health != null)
         {
-            HealthComponent.OnOutOfHealth += printDie;
+        health.OnOutOfHealth += printDie;
         StartCoroutine(attack());
         }
     }

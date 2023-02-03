@@ -6,7 +6,7 @@ public class HealthComponent : MonoBehaviour
 {
     // Trigger when out of health
     public delegate void OutOfHealth();
-    public static event OutOfHealth OnOutOfHealth;
+    public event OutOfHealth OnOutOfHealth;
 
     // Received health from field value
     public int health;
