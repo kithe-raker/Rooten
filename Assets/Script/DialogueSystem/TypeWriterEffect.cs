@@ -19,9 +19,6 @@ public class TypeWriterEffect : MonoBehaviour
 
     IEnumerator TypeText(string text, TMP_Text lebel)
     {
-        lebel.text = string.Empty;
-        yield return new WaitForSeconds(2);
-
         float t = 0;
         int charIndex = 0;
 
