@@ -16,4 +16,9 @@ public class SceneLoader : MonoBehaviour
         int nextLevelBuildIndex = TargetSceneIndex;
         SceneManager.LoadScene(nextLevelBuildIndex);
     }
+
+    public void StartLoadScene(int TargetSceneIndex)
+    {
+        StartCoroutine(LoadTargetScene(TargetSceneIndex));
+    }
 }
