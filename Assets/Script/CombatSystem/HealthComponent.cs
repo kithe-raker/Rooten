@@ -8,6 +8,10 @@ public class HealthComponent : MonoBehaviour
     public delegate void OutOfHealth();
     public event OutOfHealth OnOutOfHealth;
 
+    // Trigger when take damage
+    public delegate void DamageTaked(int damage);
+    public event DamageTaked OnTakeDamage;
+
     // Received health from field value
     public int health;
 
@@ -23,11 +27,15 @@ public class HealthComponent : MonoBehaviour
     public void TakeDamage(int damage)
     {
         _health -= damage;
+        
+        if(OnTakeDamage != null)
+        {
+            OnTakeDamage(damage);
+        }
 
         if (_health <= 0 && OnOutOfHealth != null)
         {
             OnOutOfHealth();
-
         }
     }
 
