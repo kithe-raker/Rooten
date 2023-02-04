@@ -21,12 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Exmaple/Demo2.unity
     guid: 860e2b5eac0998341b7ce7add15a2791
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: 2c3609f523180a443bfbc30651aee2bf
+    path: Assets/Scenes/Levels/LastLevel/SpareLevel.unity
+    guid: a6bc6fe85f871094cb2466049191bc10
   - enabled: 1
-    path: Assets/Scenes/enemy test.unity
-    guid: e9a00b7b6424dea41baf239c673053ed
-  - enabled: 1
-    path: Assets/Scenes/Title.unity
-    guid: 478da492e707e3c4ba187f051f1ffb47
+    path: Assets/Scenes/Levels/LastLevel/KillLevel.unity
+    guid: 33507a56da97047408bf8db4eb9c3867
   m_configObjects: {}
