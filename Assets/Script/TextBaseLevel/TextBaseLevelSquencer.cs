@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class TextBaseLevelSquencer : MonoBehaviour
 {
+    public GameObject dialogCanvas;
+    public GameObject buttonRow;
     public TMP_Text textLebel;
     public List<string> dialogList = new List<string>();
 
@@ -30,13 +32,17 @@ public class TextBaseLevelSquencer : MonoBehaviour
     {
         if (dialogList != null && dialogList.Count > 0)
         {
-            _isFinishTyping = true;
+            _isFinishTyping = false;
             _effect.StartTyping(dialogList[0], textLebel);
             dialogList.RemoveAt(0);
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(dialogCanvas);
+            if (buttonRow != null)
+            {
+                buttonRow.SetActive(true);
+            }
         }
     }
 
