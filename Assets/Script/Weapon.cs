@@ -6,7 +6,8 @@ public class Weapon : MonoBehaviour
 {
     public Collider2D weaponCollider;
     public int attacksLeft = 10;
-    public float coolDownDuration = 5f;
+    public int attackTime = 10;
+    public float coolDownDuration = 4f;
     private bool coolingDown = false;
     public float attackDelay = 0.5f;
 
@@ -16,18 +17,20 @@ public class Weapon : MonoBehaviour
         {
             StartCoroutine(Attack());
         }
+      
     }
 
     IEnumerator Attack()
     {
         weaponCollider.enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        weaponCollider.enabled = false;
         attacksLeft--;
         if (attacksLeft == 0)
         {
             StartCoroutine(CoolDown());
         }
         yield return new WaitForSeconds(attackDelay);
-        weaponCollider.enabled = false;
         Debug.Log(attacksLeft);
     }
 
@@ -35,7 +38,8 @@ public class Weapon : MonoBehaviour
     {
         coolingDown = true;
         yield return new WaitForSeconds(coolDownDuration);
-        attacksLeft = 10;
+        attacksLeft = attackTime;
+        Debug.Log(attacksLeft);
         coolingDown = false;
     }
 

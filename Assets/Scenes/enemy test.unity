@@ -8888,11 +8888,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &884337337 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6177741543578660035, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
-  m_PrefabInstance: {fileID: 6177741543384286842}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &885060768
 GameObject:
   m_ObjectHideFlags: 0
@@ -9743,9 +9738,11 @@ GameObject:
   - component: {fileID: 1635908613}
   - component: {fileID: 1635908612}
   - component: {fileID: 1635908611}
+  - component: {fileID: 1635908616}
+  - component: {fileID: 1635908615}
   m_Layer: 0
   m_Name: BeanSprout
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9784,8 +9781,8 @@ PolygonCollider2D:
       - {x: -0.71227026, y: 0.5342139}
       - {x: -0.603045, y: 0.92656446}
       - {x: -0.44065762, y: 1.0815008}
-      - {x: -0.31023264, y: 1.3118038}
-      - {x: 0.5049548, y: 0.6}
+      - {x: -0.40769958, y: 1.092503}
+      - {x: 0.5232291, y: 0.9045844}
       - {x: 0.6647544, y: 0.6235429}
       - {x: 0.67298746, y: 0.26276124}
       - {x: 0.83669615, y: 0.10679114}
@@ -9842,7 +9839,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &1635908613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9872,6 +9869,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635908615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635908610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ff0ce1460816d4c907d7b09c98e384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
+  _health: 0
+--- !u!114 &1635908616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635908610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd1e7cb534d2bd41aea97ac6479117c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1732278447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10417,6 +10440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6177741543578660033, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
 --- !u!1001 &7910921305659101541
@@ -10429,7 +10456,7 @@ PrefabInstance:
     - target: {fileID: 7910921303728534530, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 884337337}
+      objectReference: {fileID: 51770189}
     - target: {fileID: 7910921304620547281, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
       propertyPath: m_Name
       value: Enemy1
