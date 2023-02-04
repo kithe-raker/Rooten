@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class DeleteObject : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    HealthComponent health;
     void Start()
     {
-        
+        health = this.gameObject.GetComponent<HealthComponent>();
+        health.OnOutOfHealth += DestroyObject;
     }
 
-    // Update is called once per frame
-    void Update()
+    void DestroyObject ()
     {
-        
+         Destroy(gameObject,0f);
     }
 }
