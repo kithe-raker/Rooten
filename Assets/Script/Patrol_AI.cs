@@ -10,7 +10,6 @@ public class Patrol_AI : MonoBehaviour
     [SerializeField] Transform[] Positions;
     [SerializeField] float ObjectSpeed;
     [SerializeField] Transform Player;
-    public GameObject Target;
    
     
     bool isTrigger = false;
