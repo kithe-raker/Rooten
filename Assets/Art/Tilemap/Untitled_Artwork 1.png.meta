@@ -718,7 +718,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 125
-        y: 125
+        y: 136
         width: 25
         height: 25
       alignment: 0
@@ -739,11 +739,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 125
+        y: 136
         width: 25
         height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.518761, y: 0.5093811}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1649,7 +1649,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Untitled_Artwork 1_35: -1221552288
-      Untitled_Artwork 1_58: 830458039
+      Untitled_Artwork 1_49: 488614231
       Untitled_Artwork 1_64: 324448603
       Untitled_Artwork 1_33: -1238519373
       Untitled_Artwork 1_62: -159607483
@@ -1685,10 +1685,10 @@ TextureImporter:
       Untitled_Artwork 1_38: 1866330911
       Untitled_Artwork 1_27: 859492270
       Untitled_Artwork 1_57: 1700106798
-      Untitled_Artwork 1_25: 2041250637
+      Untitled_Artwork 1_55: -195927895
       Untitled_Artwork 1_44: 1812546947
       Untitled_Artwork 1_56: -1874819300
-      Untitled_Artwork 1_55: -195927895
+      Untitled_Artwork 1_25: 2041250637
       Untitled_Artwork 1_71: 594627049
       Untitled_Artwork 1_60: 691088047
       Untitled_Artwork 1_11: -383000689
@@ -1720,7 +1720,7 @@ TextureImporter:
       Untitled_Artwork 1_19: 297966359
       Untitled_Artwork 1_66: -2024000587
       Untitled_Artwork 1_52: 1570048508
-      Untitled_Artwork 1_49: 488614231
+      Untitled_Artwork 1_58: 830458039
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
