@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public Collider2D weaponCollider;
     public int attacksLeft = 10;
-    public float coolDownDuration = 10f;
+    public float coolDownDuration = 5f;
     private bool coolingDown = false;
     public float attackDelay = 0.5f;
 
