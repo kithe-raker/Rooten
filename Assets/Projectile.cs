@@ -5,6 +5,12 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed = 4.5f;
+    public float lifespan = 10f;
+
+    private void Awake()
+    {
+        Destroy(gameObject, lifespan);
+    }
 
     // Update is called once per frame
     void Update()

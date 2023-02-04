@@ -47,7 +47,7 @@ public class MC_control : MonoBehaviour
         {
             //ren.renderingLayerMask = 1 ;
         }
-
+        
         
     }
 
