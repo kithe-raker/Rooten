@@ -318,10 +318,10 @@ TextureImporter:
       name: 7C79FBD4-1329-46B4-9945-E970C505593E_10
       rect:
         serializedVersion: 2
-        x: 48
-        y: 86
-        width: 76
-        height: 152
+        x: 0
+        y: 0
+        width: 124
+        height: 238
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +339,10 @@ TextureImporter:
       name: 7C79FBD4-1329-46B4-9945-E970C505593E_11
       rect:
         serializedVersion: 2
-        x: 142
-        y: 86
-        width: 148
-        height: 144
+        x: 123
+        y: 0
+        width: 202
+        height: 236
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,9 +361,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 328
-        y: 86
-        width: 152
-        height: 204
+        y: 0
+        width: 235
+        height: 284
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,9 +382,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 568
-        y: 86
-        width: 134
-        height: 302
+        y: 0
+        width: 201
+        height: 388
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,6 +415,7 @@ TextureImporter:
       7C79FBD4-1329-46B4-9945-E970C505593E_12: -519551058
       7C79FBD4-1329-46B4-9945-E970C505593E_8: 1240507452
       7C79FBD4-1329-46B4-9945-E970C505593E_13: 1554188197
+      7C79FBD4-1329-46B4-9945-E970C505593E_14: 1150976613
       7C79FBD4-1329-46B4-9945-E970C505593E_2: 752416721
       7C79FBD4-1329-46B4-9945-E970C505593E_10: -519663673
       7C79FBD4-1329-46B4-9945-E970C505593E_5: 1027244545

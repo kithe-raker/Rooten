@@ -15,13 +15,17 @@ public class MC_control : MonoBehaviour
 
     
     public bool collision;
+    Vector2 MOnementInput;
     public Collider2D MC_collider;
     public float groundradius = 0.2f;
-
+    private float movementThreshold = 0.1f;
     private SpriteRenderer ren;
+    bool isLeft = false;
+
+    bool isMoving = false;
 
     
-    void start()
+    void Start()
     {
         MC_collider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
@@ -29,44 +33,45 @@ public class MC_control : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void FixedUpdate()//Input
+    void Flip()
     {
-        if(movement != Vector2.zero)
+        Vector3 scale = transform.localScale ;
+        scale.x*=-1;
+        transform.localScale = scale;
+        isLeft = !isLeft;
+    }
+
+    void Update()
+    {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
+        if (movement.x != 0 || movement.y != 0)
         {
-            bool success = Move(movement);
-            if(!success)
+            if((movement.x < 0 && !isLeft) || (movement.x > 0 && isLeft))
             {
-                success = Move(new Vector2(movement.x, 0));
-                if(!success)
-                {
-                    success = Move(new Vector2(0,movement.y));
-                }
+                Flip();
             }
+            //Debug.Log("X MOve: " + movement.x);
+            animator.SetInteger("Walking", 1);
         }
-        // movement.x = Input.GetAxisRaw("Horizontal");
-        // movement.y = Input.GetAxisRaw("Vertical");
-
-        // animator.SetFloat("Horizontal", movement.x);
-        animator.SetBool("isMOving", success);
-        
-
-    }
-
-    // Update is called once per frame
-    void Update()//movement
-    {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);  
-        if(movement.y ==1)
+        else
         {
-            //ren.renderingLayerMask = 1 ;
+            animator.SetInteger("Walking", 0);
         }
 
+        //animator.SetFloat("Horizontal", movement.x);
+        //animator.SetFloat("Speed", movement.sqrMagnitude);
         
-    }
-    void Move()
-    {
-        
-    }
+       
 
+        //animator.SetBool("isMoving",IsMoving); 
+
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime); 
+    }
+    // bool IsMoving()
+    //     {
+    //         return Mathf.Abs(rb.velocity.x) > movementThreshold || Mathf.Abs(rb.velocity.y) > movementThreshold;
+    //     }
     
 }
