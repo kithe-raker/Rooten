@@ -45,5 +45,7 @@ public class HealthComponent : MonoBehaviour
         return _health;
     }
 
+    
+
 
 }

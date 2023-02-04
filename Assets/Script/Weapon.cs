@@ -5,63 +5,38 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Collider2D weaponCollider;
-    public float delay = 1.0f;
-    public int hitLimit = 10;
-    private int hitCount = 0;
-    private float cooldownTimer;
-    float lastAttack;
-    bool canAttack = true;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int attacksLeft = 10;
+    public float coolDownDuration = 5f;
+    private bool coolingDown = false;
+    public float attackDelay = 0.5f;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {      if(hitCount < hitLimit & canAttack)
-                {
-                Attack();   
-                }            
-        }
-        else if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonDown(0) && attacksLeft > 0 && !coolingDown)
         {
-            weaponCollider.enabled = false;
+            StartCoroutine(Attack());
         }
-
-        if(hitCount >= hitLimit)
-        {
-            canAttack = false;
-            StartCoroutine(cooldown());
-        }
-            Debug.Log(hitCount);
-            
     }
 
-    private void Attack()
+    IEnumerator Attack()
     {
-        if (Time.time - lastAttack < delay)
-        {
-             return;    
-        }
-        lastAttack = Time.time;
-        hitCount += 1;
         weaponCollider.enabled = true;
-        
-        //weaponAnimator.SetTrigger("Shoot");
+        attacksLeft--;
+        if (attacksLeft == 0)
+        {
+            StartCoroutine(CoolDown());
+        }
+        yield return new WaitForSeconds(attackDelay);
+        weaponCollider.enabled = false;
+        Debug.Log(attacksLeft);
     }
 
-    private IEnumerator cooldown()
+    IEnumerator CoolDown()
     {
-        //yield return new WaitForSeconds(2.0f);
-        while(hitCount > 0)
-        {
-            hitCount -= 1;
-            yield return new WaitForSeconds(1.0f);
-        }
-        canAttack = true;
+        coolingDown = true;
+        yield return new WaitForSeconds(coolDownDuration);
+        attacksLeft = 10;
+        coolingDown = false;
     }
 
 
