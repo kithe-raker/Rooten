@@ -10,16 +10,19 @@ public class Weapon : MonoBehaviour
     public float coolDownDuration = 4f;
     private bool coolingDown = false;
     public float attackDelay = 0.5f;
+    Animator animator;
 
     void Start()
     {
         weaponCollider.enabled = false;
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && attacksLeft > 0 && !coolingDown)
         {
             StartCoroutine(Attack());
+            animator.SetTrigger("Shoot");
         }
       
     }
@@ -27,7 +30,7 @@ public class Weapon : MonoBehaviour
     IEnumerator Attack()
     {
         weaponCollider.enabled = true;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
         weaponCollider.enabled = false;
         attacksLeft--;
         if (attacksLeft == 0)
