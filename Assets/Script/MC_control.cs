@@ -18,7 +18,7 @@ public class MC_control : MonoBehaviour
     Vector2 MOnementInput;
     public Collider2D MC_collider;
     public float groundradius = 0.2f;
-    private float movementThreshold = 0.1f;
+    //private float movementThreshold = 0.1f;
     private SpriteRenderer ren;
     bool isLeft = false;
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public GameObject target;
     public int damage = 1;
     HealthComponent health;
     [SerializeField] private float attackDelay= 1f;
