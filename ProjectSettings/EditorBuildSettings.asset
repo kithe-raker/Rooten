@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/LastLevel/SpareLevel.unity
     guid: a6bc6fe85f871094cb2466049191bc10
   - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 2c3609f523180a443bfbc30651aee2bf
+  - enabled: 1
     path: Assets/Scenes/Levels/LastLevel/KillLevel.unity
     guid: 33507a56da97047408bf8db4eb9c3867
   m_configObjects: {}
