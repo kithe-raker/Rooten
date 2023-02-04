@@ -5,11 +5,11 @@ using UnityEngine;
 public class WeaponHitBox : MonoBehaviour
 {
     public GameObject target;
-    public float damage = 1f;
+    public int damage = 1;
     HealthComponent health;
    void OnTriggerEnter2D(Collider2D target)
    {    
-        if(target.gameObject.Tag == "Enemy")
+        if(target.gameObject.tag == "Enemy")
         {
             health = target.GetComponent<HealthComponent>();  
             if (health != null)
