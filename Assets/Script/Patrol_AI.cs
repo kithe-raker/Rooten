@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Patrol_AI : MonoBehaviour
 {
-    public Collider2D colchecker;
+    
     [SerializeField] Transform[] Positions;
     [SerializeField] float ObjectSpeed;
     [SerializeField] Transform Player;
