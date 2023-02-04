@@ -5,7 +5,7 @@ using UnityEngine;
 public class ESCAPE : MonoBehaviour
 {
     public GameObject panel;
-    public static bool Pause;
+    public bool pause = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,51 +15,36 @@ public class ESCAPE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if(Pause)
+            if(pause)
             {
-                //Debug.Log("escape was press");
-                panel.SetActive(true);
-                Pause = false;
-                Time.timeScale = 0f;
+                pause = false;
+                panel.SetActive(false);
+                Time.timeScale = 1f;
             }
             else
             {
-                panel.SetActive(false);
-                Pause = true;
-                Time.timeScale = 1f;
+                pause = true;
+                panel.SetActive(true);
+                Time.timeScale = 0f;    
             }
-            
-            
-
         }
-       
-        
-        
     }
-   public void escape()
+
+    public void Escape()
     {
-       
-            if (Pause)
-            {
-                //Debug.Log("escape was press");
-                panel.SetActive(true);
-                Pause = false;
-                Time.timeScale = 0f;
-            }
-            else
-            {
-                panel.SetActive(false);
-                Pause = true;
-                Time.timeScale = 1f;
-            }
-
-
-
-
+        if (pause)
+        {
+            pause = false;
+            panel.SetActive(false);
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            pause = true;
+            panel.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
-
-
-
 }
