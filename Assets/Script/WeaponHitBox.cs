@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponHitBox : MonoBehaviour
 {
-    public GameObject target;
+    //public GameObject target;
     public int damage = 1;
     HealthComponent health;
    void OnTriggerEnter2D(Collider2D target)
