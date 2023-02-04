@@ -11,7 +11,8 @@ public class Patrol_AI : MonoBehaviour
     [SerializeField] float ObjectSpeed;
     [SerializeField] Transform Player;
     public GameObject Target;
-    [SerializeField] private float speed = 5;
+   
+    
     bool isTrigger = false;
 
 
@@ -30,7 +31,7 @@ public class Patrol_AI : MonoBehaviour
     {
         if(isTrigger)
         {
-            transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, Player.position, ObjectSpeed * Time.deltaTime);
         }
         else
         {
