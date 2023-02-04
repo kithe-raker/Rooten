@@ -9,11 +9,11 @@ public class MC_control : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 5f;
     public Rigidbody2D rb;
-    public Animator animator;
+    //public Animator animator;
     public Vector2 movement;
 
 
-    public LayerMask wallLayer;
+    
     public bool collision;
     public Transform Checker;
     public Collider2D MC_collider;
@@ -34,8 +34,8 @@ public class MC_control : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("speed", movement.sqrMagnitude);
+        //animator.SetFloat("Horizontal", movement.x);
+        //animator.SetFloat("speed", movement.sqrMagnitude);
 
     }
 
