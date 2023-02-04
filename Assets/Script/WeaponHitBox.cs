@@ -14,18 +14,11 @@ public class WeaponHitBox : MonoBehaviour
         if (target.gameObject.tag == "Enemy")
         {
             health = target.GetComponent<HealthComponent>();
-            if (health != null && attackTime >= attackDelay)
-            {
-                Debug.Log("Hit!!");
+            
+                //Debug.Log(target.gameObject.name);
+                Debug.Log("Hit!! Enemy");
                 health.TakeDamage(damage);
                 attackTime = 0f;
-            }
-            else
-            {
-                attackTime += Time.deltaTime;
-                
-            }
-        
         }
     }
 }
