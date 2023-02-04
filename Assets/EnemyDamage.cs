@@ -13,7 +13,7 @@ public class EnemyDamage : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D target)
     {
-        if (target.gameObject.tag == "Head")
+        if (target.gameObject.tag == "Player")
         {
             health = target.GetComponent<HealthComponent>();
             if (health != null && attackTime >= attackDelay)
