@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Patrol_AI : MonoBehaviour
 {
-
+    public Collider2D colchecker;
     [SerializeField] Transform[] Positions;
     [SerializeField] float ObjectSpeed;
     [SerializeField] Transform Player;
@@ -40,6 +40,7 @@ public class Patrol_AI : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D Target)
     {
+        Debug.Log("trigger " + Target.gameObject.name);
         if (Target.gameObject.tag == "Player")
         {
             isTrigger = true;
