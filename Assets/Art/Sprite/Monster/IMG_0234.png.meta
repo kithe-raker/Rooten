@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IMG_0234_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 185
+        width: 155
+        height: 95
+      alignment: 9
+      pivot: {x: 0.49199057, y: 0.21250321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d72959f9b5a7d145bd064fc99fd33aa
+      internalID: 1572215875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_0234_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 185
+        width: 150
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5082766, y: 0.18273689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c428728a2c4e404d9cca0a837246391
+      internalID: -1676862343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_0234_2
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 185
+        width: 150
+        height: 90
+      alignment: 9
+      pivot: {x: 0.51655275, y: 0.21032494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb716978e83f854d93679bc2b9dacc6
+      internalID: 811425621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +177,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IMG_0234_2: 811425621
+      IMG_0234_0: 1572215875
+      IMG_0234_1: -1676862343
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
