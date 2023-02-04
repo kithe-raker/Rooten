@@ -38,7 +38,6 @@ public class TextBaseLevelSquencer : MonoBehaviour
         }
         else
         {
-            Destroy(dialogCanvas);
             if (buttonRow != null)
             {
                 buttonRow.SetActive(true);
