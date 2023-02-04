@@ -9866,6 +9866,10 @@ PrefabInstance:
       propertyPath: sceneLoader
       value: 
       objectReference: {fileID: 1777411568}
+    - target: {fileID: 1408516427125311842, guid: 18edea26ac2b69e4fa3fa85571e893dd, type: 3}
+      propertyPath: targetSceneIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1408516427125311843, guid: 18edea26ac2b69e4fa3fa85571e893dd, type: 3}
       propertyPath: m_Name
       value: HoleObject (1)
@@ -9999,14 +10003,6 @@ PrefabInstance:
     - target: {fileID: 913373805132197119, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3418916339354997722, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 3418916339354997722, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 6177741543333295401, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
       propertyPath: m_RootOrder
