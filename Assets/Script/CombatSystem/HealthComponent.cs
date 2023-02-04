@@ -16,7 +16,7 @@ public class HealthComponent : MonoBehaviour
     public int health;
 
     // remaining health
-    int _health;
+    public int _health;
 
     // Start is called before the first frame update
     void Start()

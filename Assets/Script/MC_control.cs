@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 //using UnityEngine.InputSystem;
 
 public class MC_control : MonoBehaviour
@@ -18,11 +19,14 @@ public class MC_control : MonoBehaviour
     public Collider2D MC_collider;
     public float groundradius = 0.2f;
 
+    private SpriteRenderer ren;
+
     
     void start()
     {
         MC_collider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
+        ren = GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()//Input
@@ -38,7 +42,12 @@ public class MC_control : MonoBehaviour
     // Update is called once per frame
     void Update()//movement
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);  
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime); 
+        if(movement.y ==1)
+        {
+            //ren.renderingLayerMask = 1 ;
+        }
+
         
     }
 
