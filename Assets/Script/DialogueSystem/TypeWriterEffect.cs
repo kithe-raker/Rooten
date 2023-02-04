@@ -37,7 +37,7 @@ public class TypeWriterEffect : MonoBehaviour
 
         if (OnFinishTyping != null)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
             OnFinishTyping();
         }
     }
