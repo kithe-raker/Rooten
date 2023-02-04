@@ -11,6 +11,10 @@ public class Weapon : MonoBehaviour
     private bool coolingDown = false;
     public float attackDelay = 0.5f;
 
+    void Start()
+    {
+        weaponCollider.enabled = false;
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && attacksLeft > 0 && !coolingDown)
