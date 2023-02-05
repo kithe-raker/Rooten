@@ -6,16 +6,15 @@ public class DeleteObject : MonoBehaviour
 {
 
     HealthComponent health;
-    public GameObject target;
     void Start()
     {
-        target = transform.gameObject;
-        health = target.GetComponent<HealthComponent>();
-        health.OnOutOfHealth += DestroyObject;
+        health = GetComponentInChildren(typeof(HealthComponent)) as HealthComponent;
+        if (health != null)
+            health.OnOutOfHealth += DestroyObject;
     }
 
-    void DestroyObject ()
+    void DestroyObject()
     {
-         Destroy(target,0f);
+        Destroy(gameObject);
     }
 }
