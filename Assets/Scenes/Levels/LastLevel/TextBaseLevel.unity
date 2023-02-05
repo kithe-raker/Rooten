@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f1dab7e6682214c89d5f65c91a4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeSpeed: 10
+  typeSpeed: 32
 --- !u!114 &770617572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,13 +598,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa6e576091fa5d429f0a5b73713142b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogCanvas: {fileID: 925068500}
+  dialogCanvas: {fileID: 925068503}
   buttonRow: {fileID: 1596592119}
+  sceneLoader: {fileID: 1902966927}
   textLebel: {fileID: 594642725}
-  dialogList:
-  - 1
-  - 2
-  - Dialog 3
 --- !u!4 &770617573
 Transform:
   m_ObjectHideFlags: 0
@@ -804,7 +801,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1216469839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 770617572}
+        m_TargetAssemblyTypeName: TextBaseLevelSquencer, Assembly-CSharp
+        m_MethodName: MakeDecision
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1216469839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,17 +917,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d7411df331f7549b3de4798e533b1d, type: 3}
---- !u!114 &1335668494 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8260466051211677733, guid: 67d7411df331f7549b3de4798e533b1d, type: 3}
-  m_PrefabInstance: {fileID: 1335668493}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 520e9cf67839a8542b16238f8e9d3bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1432490852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,14 +1001,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1335668494}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: StartLoadScene
-        m_Mode: 3
+      - m_Target: {fileID: 770617572}
+        m_TargetAssemblyTypeName: TextBaseLevelSquencer, Assembly-CSharp
+        m_MethodName: MakeDecision
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1164,6 +1162,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596592119}
   m_CullTransparentMesh: 1
+--- !u!114 &1902966927 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8260466051211677733, guid: 67d7411df331f7549b3de4798e533b1d, type: 3}
+  m_PrefabInstance: {fileID: 1335668493}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520e9cf67839a8542b16238f8e9d3bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2019284135
 GameObject:
   m_ObjectHideFlags: 0
