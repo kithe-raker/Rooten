@@ -140,6 +140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 744915696636939095, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 53c99ea3d3ac8f04a9260bfebc42444b, type: 2}
     - target: {fileID: 1102879067167758697, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
       propertyPath: m_Size.x
       value: 1.1780713
@@ -156,6 +160,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 1.1229918
       objectReference: {fileID: 0}
+    - target: {fileID: 2143420949201021824, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_Volume
+      value: 0.222
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143420949201021824, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6bda1c512ff5ddd46af1e767cd646241, type: 3}
     - target: {fileID: 3418916339354997722, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.08
@@ -164,6 +176,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.31
       objectReference: {fileID: 0}
+    - target: {fileID: 5182193559795290803, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c3de3f9ab5d44db4fa446d6d8f79f0e4, type: 3}
     - target: {fileID: 6177741543027281200, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.09411765
@@ -626,8 +642,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1352970891
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}

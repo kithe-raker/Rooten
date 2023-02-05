@@ -12,6 +12,8 @@ public class Weapon : MonoBehaviour
     private bool coolingDown = false;
     public float attackDelay = 0.5f;
     Animator animator;
+    public AudioSource audioSourceAttack;
+    public AudioSource audioSourceIdle;
 
     void Start()
     {
@@ -24,8 +26,10 @@ public class Weapon : MonoBehaviour
         {
             StartCoroutine(Attack());
             animator.SetTrigger("Shoot");
+            audioSourceIdle.Pause();
+            audioSourceAttack.Play();
+            
         }
-
     }
 
     IEnumerator Attack()
@@ -34,13 +38,14 @@ public class Weapon : MonoBehaviour
         weaponCollider.enabled = true;
         yield return new WaitForSeconds(0.3f);
         weaponCollider.enabled = false;
+        audioSourceIdle.UnPause();
         attacksLeft--;
         if (attacksLeft == 0)
         {
             StartCoroutine(CoolDown());
         }
         yield return new WaitForSeconds(attackDelay);
-        Debug.Log(attacksLeft);
+        //Debug.Log(attacksLeft);
     }
 
     IEnumerator CoolDown()
@@ -56,7 +61,7 @@ public class Weapon : MonoBehaviour
             smoke.gameObject.SetActive(false);
         }
         attacksLeft = attackTime;
-        Debug.Log(attacksLeft);
+        //Debug.Log(attacksLeft);
         coolingDown = false;
     }
 
