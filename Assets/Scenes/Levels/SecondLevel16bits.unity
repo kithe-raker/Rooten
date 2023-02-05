@@ -140,6 +140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 744915696636939095, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 53c99ea3d3ac8f04a9260bfebc42444b, type: 2}
     - target: {fileID: 1102879067167758697, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
       propertyPath: m_Size.x
       value: 1.1780713
@@ -156,6 +160,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 1.1229918
       objectReference: {fileID: 0}
+    - target: {fileID: 2143420949201021824, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_Volume
+      value: 0.222
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143420949201021824, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6bda1c512ff5ddd46af1e767cd646241, type: 3}
     - target: {fileID: 3418916339354997722, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.08
@@ -164,6 +176,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.31
       objectReference: {fileID: 0}
+    - target: {fileID: 5182193559795290803, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c3de3f9ab5d44db4fa446d6d8f79f0e4, type: 3}
     - target: {fileID: 6177741543027281200, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.09411765
@@ -626,8 +642,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1352970891
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -4550,7 +4566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5446806752081471916, guid: 67d7411df331f7549b3de4798e533b1d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6970568109735402608, guid: 67d7411df331f7549b3de4798e533b1d, type: 3}
       propertyPath: m_RootOrder
@@ -4843,6 +4859,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1870092615}
+    - target: {fileID: 1126751820016756482, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126751820016756482, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1126751820016756482, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartLoadScene

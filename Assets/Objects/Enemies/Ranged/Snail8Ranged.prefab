@@ -72,6 +72,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4319736918022722766, guid: 0e065adafb949574cb2d7bf3c923fe0f, type: 3}
     - target: {fileID: 6266323769964831895, guid: 53667e8be684f5845a845bae6dcfa475, type: 3}
+      propertyPath: attackDelay
+      value: 1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266323769964831895, guid: 53667e8be684f5845a845bae6dcfa475, type: 3}
       propertyPath: Positions.Array.data[0]
       value: 
       objectReference: {fileID: 0}

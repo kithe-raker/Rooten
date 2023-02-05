@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7910921303728534531, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3971984
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910921303728534531, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
+      propertyPath: m_Size.y
+      value: 1.289479
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910921303728534531, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.018053979
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910921303728534531, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.2900746
+      objectReference: {fileID: 0}
     - target: {fileID: 7910921304620547281, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
       propertyPath: m_Name
       value: Worm16Bit
@@ -75,6 +91,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7910921304663485195, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
+      propertyPath: m_Size.x
+      value: 0.94583666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910921304663485195, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6895942
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910921304663485195, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.027081683
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910921304663485195, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.3325813
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33d7498bb5e2d24c8e0b5bfe5645aab, type: 3}
 --- !u!1 &6880401228920816707 stripped
@@ -114,4 +146,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd1e7cb534d2bd41aea97ac6479117c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 6880401228920816707}
