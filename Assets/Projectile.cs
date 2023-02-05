@@ -27,8 +27,14 @@ public class Projectile : MonoBehaviour
             if (healthComp != null)
             {
                 healthComp.TakeDamage(1);
-                Destroy(gameObject);
+
             }
         }
+
+        if (collision.gameObject.tag != "Enemy")
+        {
+            Destroy(gameObject);
+        }
+
     }
 }
