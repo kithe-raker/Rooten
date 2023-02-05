@@ -247,6 +247,37 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7388002390066047680, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b56a5dbdc83808a4995d563eb695985c, type: 3}
+--- !u!1 &510302096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510302097}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &510302097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510302096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.933178, y: 7.620367, z: -8.289711}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &518639198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7353370352343089250, guid: 031a420286de75c46b25def6a790c177, type: 3}
@@ -4705,6 +4736,10 @@ PrefabInstance:
     - target: {fileID: 6238458258789642672, guid: 23bb32a31d64a264d994c8ebe67b47c7, type: 3}
       propertyPath: m_Name
       value: BeanStem16Bit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6238458258789642675, guid: 23bb32a31d64a264d994c8ebe67b47c7, type: 3}
+      propertyPath: audioSourceDead
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6238458258789642679, guid: 23bb32a31d64a264d994c8ebe67b47c7, type: 3}
       propertyPath: m_RootOrder

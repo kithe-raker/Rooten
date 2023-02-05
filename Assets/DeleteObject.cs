@@ -10,6 +10,7 @@ public class DeleteObject : MonoBehaviour
     {
         health = GetComponentInChildren(typeof(HealthComponent)) as HealthComponent;
         if (health != null)
+            
             health.OnOutOfHealth += DestroyObject;
     }
 
@@ -17,4 +18,5 @@ public class DeleteObject : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    
 }

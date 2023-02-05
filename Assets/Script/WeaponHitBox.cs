@@ -7,6 +7,7 @@ public class WeaponHitBox : MonoBehaviour
     //public GameObject target;
     public int damage = 1;
     HealthComponent health;
+    public AudioSource audioSourceDie;
     // private float attackTime = 0f;
     //private float attackDelay = 1f;
     void OnTriggerEnter2D(Collider2D target)
@@ -17,6 +18,7 @@ public class WeaponHitBox : MonoBehaviour
 
             //Debug.Log(target.gameObject.name);
             Debug.Log("Hit!! Enemy");
+            audioSourceDie.Play();
             health.TakeDamage(damage);
             // attackTime = 0f;
         }

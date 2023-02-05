@@ -11,9 +11,13 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 8a6e7b81b07b54a4f9bd8ed2bb16c187, type: 2}
+    - target: {fileID: 2498862154893297421, guid: 2fdcb6d1cd5dc7d45a7f159963a5cd79, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6880401228920816707, guid: 2fdcb6d1cd5dc7d45a7f159963a5cd79, type: 3}
       propertyPath: m_Name
-      value: WormMelee
+      value: Worm8Bit
       objectReference: {fileID: 0}
     - target: {fileID: 6880401228920816716, guid: 2fdcb6d1cd5dc7d45a7f159963a5cd79, type: 3}
       propertyPath: Player
@@ -83,5 +87,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1572215875, guid: 98af745a56507b0498b6a00c2543bb54, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 8566189125685214557, guid: 2fdcb6d1cd5dc7d45a7f159963a5cd79, type: 3}
+      propertyPath: audioSourceDead
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2498862154893297421, guid: 2fdcb6d1cd5dc7d45a7f159963a5cd79, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2fdcb6d1cd5dc7d45a7f159963a5cd79, type: 3}
