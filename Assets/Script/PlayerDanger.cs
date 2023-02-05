@@ -8,6 +8,7 @@ public class PlayerDanger : MonoBehaviour
     HealthComponent health;
     public int sceneIndex;
     public SpriteRenderer sprite;
+    public AudioSource audioSourceHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class PlayerDanger : MonoBehaviour
     void TakeDamage(int damage)
     {
         StartCoroutine(FlashRed());
+        audioSourceHit.Play();
     }
 
     public IEnumerator FlashRed()
