@@ -10,12 +10,12 @@ public class Patrol_AI : MonoBehaviour
     [SerializeField] Transform[] Positions;
     [SerializeField] float ObjectSpeed;
     [SerializeField] Transform Player;
-   
-    
+
+    private bool isEnd = false;
     bool isTrigger = false;
 
 
-    int NextPosIndex;
+    int NextPosIndex = 0;
 
     Transform Nextpos;
     // Start is called before the first frame update
@@ -50,14 +50,29 @@ public class Patrol_AI : MonoBehaviour
 
     void MoveGameObjext()
     {
-        if (transform.position == Nextpos.position)
+        Nextpos = Positions[NextPosIndex];
+        
+        if (transform.position == Nextpos.position )
         {
-            NextPosIndex++;
-            if (NextPosIndex >= Positions.Length)
+            
+            if (NextPosIndex != Positions.Length-1 && !isEnd)
             {
-                NextPosIndex = 0;
+                NextPosIndex++;
             }
-            Nextpos = Positions[NextPosIndex];
+            else if(NextPosIndex == Positions.Length-1 && !isEnd)
+            {
+                isEnd = true;
+            }
+            else if (NextPosIndex != 0 && isEnd)
+            {
+                NextPosIndex--;
+            }
+            else if (NextPosIndex == 0 && isEnd)
+            {
+                isEnd = false;
+            }
+
+
         }
         else
         {
