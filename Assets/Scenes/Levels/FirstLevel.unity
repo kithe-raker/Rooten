@@ -9840,6 +9840,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1126751820016756482, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1777411568}
+    - target: {fileID: 1126751820016756482, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
 --- !u!1001 &6177741543384286842
