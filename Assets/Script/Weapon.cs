@@ -5,6 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Collider2D weaponCollider;
+    public ParticleSystem smoke;
     public int attacksLeft = 10;
     public int attackTime = 10;
     public float coolDownDuration = 4f;
@@ -24,7 +25,7 @@ public class Weapon : MonoBehaviour
             StartCoroutine(Attack());
             animator.SetTrigger("Shoot");
         }
-      
+
     }
 
     IEnumerator Attack()
@@ -44,13 +45,21 @@ public class Weapon : MonoBehaviour
     IEnumerator CoolDown()
     {
         coolingDown = true;
+        if (smoke != null)
+        {
+            smoke.gameObject.SetActive(true);
+        }
         yield return new WaitForSeconds(coolDownDuration);
+        if (smoke != null)
+        {
+            smoke.gameObject.SetActive(false);
+        }
         attacksLeft = attackTime;
         Debug.Log(attacksLeft);
         coolingDown = false;
     }
 
 
-    
-    
+
+
 }
