@@ -21,8 +21,9 @@ public class RangedPatrol_AI : MonoBehaviour
     private HealthComponent target;
 
 
+    private bool isEnd = false;
+    int NextPosIndex = 0;
 
-    int NextPosIndex;
 
     Transform Nextpos;
     // Start is called before the first frame update
@@ -56,14 +57,28 @@ public class RangedPatrol_AI : MonoBehaviour
 
     void MoveGameObjext()
     {
+        Nextpos = Positions[NextPosIndex];
+
         if (transform.position == Nextpos.position)
         {
-            NextPosIndex++;
-            if (NextPosIndex >= Positions.Length)
+
+            if (NextPosIndex != Positions.Length - 1 && !isEnd)
             {
-                NextPosIndex = 0;
+                NextPosIndex++;
             }
-            Nextpos = Positions[NextPosIndex];
+            else if (NextPosIndex == Positions.Length - 1 && !isEnd)
+            {
+                isEnd = true;
+            }
+            else if (NextPosIndex != 0 && isEnd)
+            {
+                NextPosIndex--;
+            }
+            else if (NextPosIndex == 0 && isEnd)
+            {
+                isEnd = false;
+            }
+
         }
         else
         {
