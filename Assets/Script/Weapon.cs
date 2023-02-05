@@ -30,6 +30,7 @@ public class Weapon : MonoBehaviour
 
     IEnumerator Attack()
     {
+        yield return new WaitForSeconds(0.4f);
         weaponCollider.enabled = true;
         yield return new WaitForSeconds(0.3f);
         weaponCollider.enabled = false;
