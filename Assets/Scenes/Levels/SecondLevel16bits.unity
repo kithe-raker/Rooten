@@ -4566,7 +4566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5446806752081471916, guid: 67d7411df331f7549b3de4798e533b1d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6970568109735402608, guid: 67d7411df331f7549b3de4798e533b1d, type: 3}
       propertyPath: m_RootOrder
@@ -4859,6 +4859,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1870092615}
+    - target: {fileID: 1126751820016756482, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126751820016756482, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1126751820016756482, guid: 2f675216a6740a546b89c41e2cad5268, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartLoadScene
